@@ -1,0 +1,889 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+/*!----NO ME TOMA LA FUENTE----*/
+@font-face {
+    font-family:ae;
+    src: url(../fonts/New\ Aeonik\ Trials/)
+    
+    ;
+}
+
+
+
+/* HEADER */
+.tope{
+    background-color: rgb(14, 161, 51);
+    height: 25px;
+    background-size: cover;
+    text-align: center;
+       
+    
+}
+
+.tope h2{
+    font-size: 15px;
+    color: white;
+    padding: 2px;
+    
+}
+
+.logo img {
+    width: 200px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+.barra{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.barra ul{
+    margin:10px;
+    margin-right: 10px !important;
+   
+}
+.barra form{
+    margin-right: 200px !important;
+
+}
+.nav-c li a{
+    color: rgb(14, 161, 51) !important;
+    font-weight: bold;
+
+}
+
+/*---MAIN-----*/
+section h1{
+    text-align: center;
+    font-size: 50px;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(13, 27, 145);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra con desplazamiento horizontal de 2px, desplazamiento vertical de 2px, desenfoque de 4px y un color con opacidad */
+    
+
+}
+
+.main1 {
+    position: relative;
+    background-image: url(../img/farma.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    background-attachment: fixed;
+
+}
+.enlace{
+    text-align: center;
+    display: flex;   
+    justify-content: center;
+    
+}
+
+.enlace div{
+width: 120px;
+height: 120px;
+
+padding: 10px;
+text-align: center;
+border-radius: 10%;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+box-sizing: border-box;
+margin: 25px;
+align-items: center;;
+
+}
+.cuadrado1 {
+    background-color: blueviolet;
+}
+.cuadrado{
+    background-color: rgb(14, 161, 51)
+}
+.cuadrado2{
+    background-color: orange;
+
+}
+.cuadrado3{
+    background-color: rgb(240, 116, 136);
+
+}
+.cuadrado4{
+    background-color: rgb(8, 8, 146);
+
+}
+.enlace a {
+    display: block;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+    
+
+}
+
+
+.enlace img{
+    
+        height: auto;
+        max-width: 50%;
+        max-height: 50%;
+        margin-bottom: 10px;
+        filter: invert(100%);
+}
+
+.enlace a h3{
+    
+    color: white;
+    font-size: medium;
+}
+
+.enlace{
+    flex-wrap: wrap;
+   }
+
+/*!---section2 + section 3----*/
+
+.linea{
+
+    display: inline-block;
+    border-top: 1px solid black; 
+    width:100vw; 
+    margin-top: 10px;
+    
+}
+.linea h2{
+    text-align: center;
+
+}
+
+.producto {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+
+}
+
+.producto h2{
+    text-align: center;
+    justify-content: center;
+}
+
+.producto div {
+    text-align: center;
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    padding: 10px; 
+    width: 250px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin:5px;
+    justify-content: space-around;
+}
+
+.producto img{
+    width: 200px;
+    height: 200px;
+}
+.producto h3{
+    color: rgb(14, 161, 51);
+    font-size: medium;
+    font-weight: 700;;
+}
+.producto del{
+    color: grey;;
+}
+.producto h4{
+    font-size: large;
+    font-weight: bold;
+
+}
+.producto button{
+    background-color: rgb(14, 161, 51);
+    color: white;
+    font-weight: bold;
+    height: 35px;
+    width: 200px;
+    border-color: rgb(14, 161, 51);
+    border-radius: 5%;
+}
+
+
+/*!---FOOTER---*/
+
+.whats{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    justify-content: center;
+    text-decoration: none;    
+    
+}
+.whats h3{
+    font-size: smaller;
+
+}
+
+.contacto span a{
+    text-decoration: none;
+    color: black;
+}
+.contacto span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    text-wrap: wrap;
+    font-size: smaller;
+    text-decoration: none;
+}
+.contacto a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+
+}
+.contacto img {
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+    
+}
+ .contacto h2{
+    text-align: center;
+    font-size: medium;
+}
+
+.lugar{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+.lugar img{
+    margin: 1px;
+    height: 20px;
+    width: 15px;
+}
+.lugar h2{
+    font-size: medium;
+    text-align: center;
+}
+.lugar h3{
+    margin: 4px;
+    font-size: small;
+}
+.lugar iframe{
+
+    margin: 20px;
+}
+
+.logofooter img{
+    width: 200px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+
+
+
+.grid-footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 90% auto ;
+    background-color: rgba(226, 225, 225, 0.685);
+    background-size: auto;
+    grid-template-areas: 
+    "log medio social lugar"
+    "firma firma ayuda ayuda" ;
+    position: relative;
+}
+
+.log{
+    grid-area: log;
+}
+
+.medio{
+    grid-area: medio;
+
+}
+
+.social{
+    grid-area: social;
+    
+}
+.social img{
+    margin: 10px;
+}
+.lugar{
+    grid-area: lugar;
+        
+}
+.firma{
+    grid-area: firma;
+    background-color: rgb(14, 161, 51);
+    text-align: center;
+    position: relative;    
+    font-size: small;
+    display: flex;
+    justify-content: center;
+}
+
+.ayuda{
+    grid-area: ayuda;
+    background-color: rgb(14, 161, 51);
+    text-align: center;
+    background-size: cover;
+   
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    align-items: center;
+    height: 50px;
+}
+
+.ayuda h2{
+    font-size: smaller;
+}
+.ayuda h3{
+    font-size: smaller;
+}
+
+.firma h3{
+ position: absolute;
+ font-size: smaller;
+ margin: 5px;       
+
+}
+.ayuda h2{
+    font-size: small;
+}
+.ayuda h3{
+    
+    padding: 5px;  
+    margin: 1px ; 
+       
+
+}
+/*?------Contacto-----------------------------------------------------------------------?*/
+
+.formu{
+    
+
+    translate: (-50%, 50%);
+    background-color:#f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    width: 700px;
+    
+}
+
+
+
+
+
+
+.formu h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.formu label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.formu input[type="text"],
+.formu input[type="email"],
+.formu textarea,
+.formu select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.formu textarea {
+    resize: vertical;
+}
+
+.formu input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formu input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+.centro{
+    background: linear-gradient(to bottom, rgb(43, 52, 129) 20%, white 70%);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ajustamos la altura al tamaño de la ventana */
+    width: 100%;
+}
+
+
+
+/*!!-------------------------------------------------------------------------------Media Queries---!*/
+
+
+
+/*?---Main---*/
+
+@media screen and (max-width: 1106px){
+    .grid-cont-secion{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas:
+    "pu pd"
+    "pt pq"  
+    ;        
+    justify-items: center;    
+    }
+
+
+    .pu{
+        grid-area: pu;
+    }
+
+    .pd{
+        grid-area: pd;
+
+    }
+
+    .pt{
+        grid-area: pt;
+    }
+
+    .pq{
+        grid-area: pq;
+
+    }
+}
+
+
+
+@media screen and (max-width: 790px){
+
+.main1 {
+
+    height: 200px;
+    
+
+}
+.main1 h1{
+font-size: 30px;
+
+}
+
+
+.enlace div{
+    width: 100px;
+    height: 100px;
+    
+    padding: 10px;
+    text-align: center;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin: 25px;
+    align-items: center;;
+    
+}
+
+@media screen and (max-width: 664px){
+
+
+
+
+   
+
+    .enlace div a h3{
+        font-size: small;
+
+    }
+
+
+}
+@media screen and (max-width:598px){
+    
+   
+
+   
+.enlace div{
+    width: 60px;
+    height: 70px;
+    
+    padding: 10px;
+    text-align: center;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin: 25px;
+    align-items: center;;
+    
+    }
+    
+    
+    .enlace img{
+        
+            height: auto;
+            max-width: 50%;
+            max-height: 50%;
+            margin-bottom: 10px;
+            filter: invert(100%);
+    }
+    
+    .enlace div a h3{
+        
+        color: white;
+        font-size: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (max-width:534px){
+    .grid-cont-secion{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas:
+        "pu"
+        "pd"
+        "pt" 
+        "pq"  
+        ;        
+        justify-items: center;    
+        }
+    
+    
+        .pu{
+            grid-area: pu;
+        }
+    
+        .pd{
+            grid-area: pd;
+    
+        }
+    
+        .pt{
+            grid-area: pt;
+        }
+    
+        .pq{
+            grid-area: pq;
+            
+        }
+        .producto div{
+            margin-bottom: 15px;
+        }
+
+
+
+
+
+
+
+
+
+    }
+
+/*---Footer---*/
+@media screen and (max-width: 750px) {
+    .grid-footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 45% 25% 10% auto ;
+        background-color: rgba(226, 225, 225, 0.685);
+        background-size: cover;
+        grid-template-areas: 
+        "log medio "
+        "social lugar"
+        "firma firma"
+        "ayuda ayuda" ;
+        position: relative;
+    }
+    
+    .log{
+        grid-area: log;
+    }
+    
+    .medio{
+        grid-area: medio;
+    }
+    
+    .social{
+        grid-area: social;
+    }
+    .social img{
+        margin: 10px;
+    }
+    .lugar{
+        grid-area: lugar;
+    
+    }
+
+    .firma{
+        grid-area: firma;
+        background-color: rgb(14, 161, 51);
+    }
+    
+    .ayuda{
+        grid-area: ayuda;
+        background-color: rgb(14, 161, 51);
+    }
+
+    .contacto{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contacto h2{
+        display: none;
+    }
+
+    .lugar iframe{
+       display: none;
+
+    }
+    .lugar h2{
+        display: none;
+    }
+    .lugar h3{
+        position: absolute;
+        bottom: 90px;
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 735px)  {
+    .grid-footer{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 40% 30% 15% auto   ;
+        background-color: rgba(226, 225, 225, 0.685);
+        background-size: cover;
+        grid-template-areas: 
+        "log medio "
+        "social lugar"
+        "firma firma"
+        "ayuda ayuda" 
+        ;
+        position: relative;
+    }
+    
+    .whats span{
+        display: none;
+
+    }
+    .logofooter img{
+        width: 180px;
+        height: 90px;
+        border-radius: 50%;
+ 
+    }
+    .social{
+        display: flex;
+        justify-content: center;
+    }
+    .social img{
+        height: 25px;
+        width: 25px;
+        
+    } 
+    .lugar iframe{
+        display: none;
+ 
+     }
+    
+    .lugar h3{
+        position: absolute;
+        bottom: 70px;
+
+    }
+}
+
+@media screen and (max-width: 481px)  {
+
+        .grid-footer{
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 20% 20% 20% 20% 10% auto   ;
+            background-color: rgba(226, 225, 225, 0.685);
+            background-size: cover;
+            grid-template-areas: 
+            "log"
+            "medio"
+            "social"
+            "lugar"
+            "firma"
+            "ayuda" 
+            ;
+            
+            align-items: center;
+            
+            
+        }       
+        .firma{
+            
+            height: 100%;
+        }
+     
+        .ayuda{
+            height: 100%;
+            display: flex;
+            justify-content:space-around;
+            flex-direction: row;
+            
+               }
+    
+         .log{
+            display: flex;
+            justify-content: center;
+         }      
+         .medio{
+            display: flex;
+            justify-content: center;
+
+         }
+
+         .social{
+            display: flex;
+            justify-content: center;
+         }
+         .lugar{
+            display: flex;
+            justify-content: center;
+         }
+}
+
+@media screen and (max-width: 378px)  {
+    .tope h2{
+        font-size: smaller;
+    }
+
+
+
+}
+}
+
+
+/*!--Contacto Media querie-----!*/
+@media screen and (max-width:900px){
+.formu{
+    width: 600px;
+
+
+}
+}
+
+@media screen and (max-width:850px){
+    .formu{
+        width: 400px;
+    
+    
+    }
+}
+
+
+@media screen and (max-width:680px){
+
+
+
+.formu h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.formu label {
+    display: block;
+    margin-bottom: 4px;
+    color: #555;
+}
+
+.formu input[type="text"],
+.formu input[type="email"],
+.formu textarea,
+.formu select {
+    width: 100%;
+    padding: 6px;
+    font-size: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.formu textarea {
+    resize: vertical;
+}
+
+.formu input[type="submit"] {
+    width: 100%;
+    padding: 6px;
+    font-size: 8px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+}
+
+
+@media screen and (max-width:500px){
+    .formu{
+        width: 300px;
+    
+    
+    }
+}
