@@ -1,0 +1,283 @@
+main{
+    section{
+        h1{
+            text-align: center;
+            font-size: 50px;
+            position: absolute;
+            bottom: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgb(13, 27, 145);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra con desplazamiento horizontal de 2px, desplazamiento vertical de 2px, desenfoque de 4px y un color con opacidad */
+            
+        
+        }
+    }
+}
+
+.main1{
+    position: relative;
+    background-image: url(../img/farma.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    background-attachment: fixed;
+
+}
+
+.enlace{
+    text-align: center;
+    display: flex;   
+    justify-content: center;
+    flex-wrap: wrap;
+    div{
+        width: 120px;
+        height: 120px;
+        
+        padding: 10px;
+        text-align: center;
+        border-radius: 10%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        margin: 25px;
+        align-items: center;;
+
+        a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+            img{
+                height: auto;
+            max-width: 50%;
+            max-height: 50%;
+            margin-bottom: 10px;
+            filter: invert(100%);
+
+            }
+            h3{
+                color: white;
+                font-size: medium; 
+            }
+        }
+
+    }
+
+
+}
+
+.cuadrado1 {
+    background-color: blueviolet;
+}
+.cuadrado{
+    background-color: rgb(14, 161, 51)
+}
+.cuadrado2{
+    background-color: orange;
+
+}
+.cuadrado3{
+    background-color: rgb(240, 116, 136);
+
+}
+.cuadrado4{
+    background-color: rgb(8, 8, 146);
+
+}
+
+/*!---section2 + section 3----*/
+
+.linea{
+    display: inline-block;
+    border-top: 1px solid black; 
+    width:100%; 
+    margin-top: 10px;
+    h2{
+        text-align: center;
+
+    }
+
+
+}
+
+.producto{
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+    div{
+        text-align: center;
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    padding: 10px; 
+    width: 250px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin:5px;
+    justify-content: space-around;
+    
+        img{
+            width: 200px;
+            height: 200px;
+        }
+        h3{
+            color: rgb(14, 161, 51);
+            font-size: medium;
+            font-weight: 700;;
+        }
+        del{
+            color: grey;;
+        }
+        h4{
+            font-size: large;
+            font-weight: bold;
+        }
+        button{
+            background-color: rgb(14, 161, 51);
+            color: white;
+            font-weight: bold;
+            height: 35px;
+            width: 200px;
+            border-color: rgb(14, 161, 51);
+            border-radius: 5%;
+        }
+    }
+
+}
+
+
+/*?------Contacto-----------------------------------------------------------------------?*/
+
+.centro{
+   
+    @include flex(linear-gradient(to bottom, rgb(43, 52, 129) 20%, white 70%),cover,flex,center,center,column,100%,100%)
+
+
+}
+
+
+.formu {
+
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    width: 700px;
+
+    > div {
+        margin-bottom: 20px;
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+
+            &:focus {
+                border-color: #007bff;
+                outline: none;
+            }
+        }
+
+        textarea {
+            resize: vertical;
+        }
+    }
+
+    h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #0056b3;
+        }
+    }
+}
+/*!--------NOSOTROS-------------------------------------------------*/
+
+.contenedor{
+
+    @include flex(radial-gradient(circle, rgba(255,255,255,0.4682247899159664) 0%, rgba(0,5,153,1) 36%, rgba(9,9,121,1) 88%),cover,flex,center,center,column,800px,100%);
+
+        section {
+                display:flex;
+                flex-direction:row;
+                margin:10px;
+
+                
+        
+                img{
+                    margin-right: 60px;
+                    border-radius: 10px;
+                }
+            
+                
+                    div{
+                    flex-direction: column;
+                    color: #fff;
+                    
+                            div {
+                                color: #0056b3;
+                                display: flex; /* Utilizar flexbox para el diseño */
+                                align-items: center; /* Centrar verticalmente los elementos */
+                                width: 600px; /* Ancho deseado del contenedor */
+                                background-color: #dddddd; /* Color de fondo gris */
+                                border-radius: 10px; /* Esquinas redondeadas */
+                                padding: 20px; /* Espacio interior */
+                            }
+                            
+                            img {
+                                
+                                height: 150px;
+                                width: 300px;
+                                margin-right: 20px; /* Margen a la derecha */
+                                border-radius: 10px; /* Esquinas redondeadas para la imagen */
+                                
+                            }
+                            
+                            div > div {
+                                flex: 1; /* El div interno ocupa todo el espacio restante */
+                            }
+                            
+                            h3 {
+                                margin: 0; /* Eliminar márgenes por defecto */
+                            }
+                            
+                            p {
+                                margin-top: 5px; /* Margen superior para separar el párrafo del título */
+                            }
+                            
+
+                }
+ 
+
+            }
+}

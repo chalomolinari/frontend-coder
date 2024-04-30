@@ -1,0 +1,765 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*!----NO ME TOMA LA FUENTE----*/
+.tope {
+  background-color: #0ea133;
+  height: 25px;
+  background-size: cover;
+  text-align: center; }
+  .tope h2 {
+    font-size: 15px;
+    color: white;
+    padding: 2px; }
+
+.logo a img {
+  width: 200px;
+  height: 100px;
+  border-radius: 50%; }
+
+.barra {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  .barra form {
+    margin-right: 200px !important; }
+  .barra ul {
+    margin: 10px;
+    margin-right: 10px !important; }
+
+.nav-c li a {
+  color: #0ea133 !important;
+  font-weight: bold; }
+
+main section h1 {
+  text-align: center;
+  font-size: 50px;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #0d1b91;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Sombra con desplazamiento horizontal de 2px, desplazamiento vertical de 2px, desenfoque de 4px y un color con opacidad */ }
+
+.main1 {
+  position: relative;
+  background-image: url(../img/farma.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  background-attachment: fixed; }
+
+.enlace {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .enlace div {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin: 25px;
+    align-items: center; }
+    .enlace div a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-decoration: none; }
+      .enlace div a img {
+        height: auto;
+        max-width: 50%;
+        max-height: 50%;
+        margin-bottom: 10px;
+        filter: invert(100%); }
+      .enlace div a h3 {
+        color: white;
+        font-size: medium; }
+
+.cuadrado1 {
+  background-color: blueviolet; }
+
+.cuadrado {
+  background-color: #0ea133; }
+
+.cuadrado2 {
+  background-color: orange; }
+
+.cuadrado3 {
+  background-color: #f07488; }
+
+.cuadrado4 {
+  background-color: #080892; }
+
+/*!---section2 + section 3----*/
+.linea {
+  display: inline-block;
+  border-top: 1px solid black;
+  width: 100%;
+  margin-top: 10px; }
+  .linea h2 {
+    text-align: center; }
+
+.producto {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px; }
+  .producto div {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    justify-content: space-around; }
+    .producto div img {
+      width: 200px;
+      height: 200px; }
+    .producto div h3 {
+      color: #0ea133;
+      font-size: medium;
+      font-weight: 700; }
+    .producto div del {
+      color: grey; }
+    .producto div h4 {
+      font-size: large;
+      font-weight: bold; }
+    .producto div button {
+      background-color: #0ea133;
+      color: white;
+      font-weight: bold;
+      height: 35px;
+      width: 200px;
+      border-color: #0ea133;
+      border-radius: 5%; }
+
+/*?------Contacto-----------------------------------------------------------------------?*/
+.centro {
+  background: linear-gradient(to bottom, #2b3481 20%, white 70%);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%; }
+
+.formu {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  width: 700px; }
+  .formu > div {
+    margin-bottom: 20px; }
+    .formu > div label {
+      display: block;
+      margin-bottom: 8px;
+      color: #555; }
+    .formu > div input[type="text"],
+    .formu > div input[type="email"],
+    .formu > div textarea,
+    .formu > div select {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      transition: border-color 0.3s ease; }
+      .formu > div input[type="text"]:focus,
+      .formu > div input[type="email"]:focus,
+      .formu > div textarea:focus,
+      .formu > div select:focus {
+        border-color: #007bff;
+        outline: none; }
+    .formu > div textarea {
+      resize: vertical; }
+  .formu h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px; }
+  .formu input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; }
+    .formu input[type="submit"]:hover {
+      background-color: #0056b3; }
+
+/*!--------NOSOTROS-------------------------------------------------*/
+.contenedor {
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.468225) 0%, #000599 36%, #090979 88%);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 800px;
+  width: 100%; }
+  .contenedor section {
+    display: flex;
+    flex-direction: row;
+    margin: 10px; }
+    .contenedor section img {
+      margin-right: 60px;
+      border-radius: 10px; }
+    .contenedor section div {
+      flex-direction: column;
+      color: #fff; }
+      .contenedor section div div {
+        color: #0056b3;
+        display: flex;
+        /* Utilizar flexbox para el diseño */
+        align-items: center;
+        /* Centrar verticalmente los elementos */
+        width: 600px;
+        /* Ancho deseado del contenedor */
+        background-color: #dddddd;
+        /* Color de fondo gris */
+        border-radius: 10px;
+        /* Esquinas redondeadas */
+        padding: 20px;
+        /* Espacio interior */ }
+      .contenedor section div img {
+        height: 150px;
+        width: 300px;
+        margin-right: 20px;
+        /* Margen a la derecha */
+        border-radius: 10px;
+        /* Esquinas redondeadas para la imagen */ }
+      .contenedor section div div > div {
+        flex: 1;
+        /* El div interno ocupa todo el espacio restante */ }
+      .contenedor section div h3 {
+        margin: 0;
+        /* Eliminar márgenes por defecto */ }
+      .contenedor section div p {
+        margin-top: 5px;
+        /* Margen superior para separar el párrafo del título */ }
+
+.whats {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  justify-content: center;
+  text-decoration: none; }
+  .whats h3 {
+    font-size: smaller; }
+
+.contacto h2 {
+  text-align: center;
+  font-size: medium; }
+
+.contacto div a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  text-decoration: none; }
+  .contacto div a img {
+    width: 35px;
+    height: 35px;
+    margin-right: 5px; }
+
+.contacto div span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+  text-wrap: wrap;
+  font-size: smaller;
+  text-decoration: none; }
+  .contacto div span a {
+    text-decoration: none;
+    color: black; }
+
+.contacto div h3 img {
+  width: 35px;
+  height: 35px;
+  margin-right: 5px; }
+
+.lugar {
+  grid-area: lugar;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center; }
+  .lugar h2 {
+    font-size: medium;
+    text-align: center; }
+  .lugar iframe {
+    margin: 20px; }
+  .lugar h3 {
+    margin: 4px;
+    font-size: small; }
+    .lugar h3 img {
+      margin: 1px;
+      height: 20px;
+      width: 15px; }
+
+.logofooter a img {
+  width: 200px;
+  height: 100px;
+  border-radius: 50%; }
+
+.grid-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 90% auto;
+  background-color: rgba(226, 225, 225, 0.685);
+  background-size: auto;
+  grid-template-areas: "log medio social lugar" "firma firma ayuda ayuda";
+  position: relative; }
+
+.log {
+  grid-area: log; }
+
+.medio {
+  grid-area: medio; }
+
+.social {
+  grid-area: social;
+  justify-self: center; }
+  .social a img {
+    margin: 10px;
+    width: 35px;
+    height: 35px; }
+
+.firma {
+  grid-area: firma;
+  background-color: #0ea133;
+  text-align: center;
+  position: relative;
+  font-size: small;
+  display: flex;
+  justify-content: center; }
+  .firma h3 {
+    position: absolute;
+    font-size: smaller;
+    margin: 5px; }
+
+.ayuda {
+  grid-area: ayuda;
+  background-color: #0ea133;
+  text-align: center;
+  background-size: cover;
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px; }
+  .ayuda h2 {
+    font-size: smaller; }
+  .ayuda h3 {
+    font-size: smaller;
+    padding: 5px;
+    margin: 1px; }
+
+/*----MAIN---------------------------------------------*/
+@media screen and (max-width: 1106px) {
+  .grid-cont-secion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "pu pd" "pt pq";
+    justify-items: center; }
+  .pu {
+    grid-area: pu; }
+  .pd {
+    grid-area: pd; }
+  .pt {
+    grid-area: pt; }
+  .pq {
+    grid-area: pq; } }
+
+@media screen and (max-width: 790px) {
+  .main1 {
+    height: 200px; }
+    .main1 h1 {
+      font-size: 30px; }
+  .enlace div {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin: 25px;
+    align-items: center; } }
+
+@media screen and (max-width: 664px) {
+  .enlace div a h3 {
+    font-size: small; } }
+
+@media screen and (max-width: 598px) {
+  .enlace div {
+    width: 60px;
+    height: 70px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin: 25px;
+    align-items: center; }
+    .enlace div a img {
+      height: auto;
+      max-width: 50%;
+      max-height: 50%;
+      margin-bottom: 10px;
+      filter: invert(100%); }
+    .enlace div a h3 {
+      color: white;
+      font-size: 10px; } }
+
+@media screen and (max-width: 583px) {
+  .grid-cont-secion {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "pu" "pd" "pt"  "pq";
+    justify-items: center; }
+  .pu {
+    grid-area: pu; }
+  .pd {
+    grid-area: pd; }
+  .pt {
+    grid-area: pt; }
+  .pq {
+    grid-area: pq; }
+  .producto div {
+    margin-bottom: 15px; } }
+
+/*--------FOOTER----------------------------------------------*/
+@media screen and (max-width: 750px) {
+  .grid-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 45% 25% 10% auto;
+    background-color: rgba(226, 225, 225, 0.685);
+    background-size: cover;
+    grid-template-areas: "log medio " "social lugar" "firma firma" "ayuda ayuda";
+    position: relative; }
+  .log {
+    grid-area: log; }
+  .medio {
+    grid-area: medio; }
+  .social {
+    grid-area: social; }
+    .social a img {
+      margin: 10px; }
+  .lugar {
+    grid-area: lugar; }
+    .lugar iframe {
+      display: none; }
+    .lugar h2 {
+      display: none; }
+    .lugar h3 {
+      position: absolute;
+      bottom: 90px;
+      font-size: small; }
+  .firma {
+    grid-area: firma;
+    background-color: #0ea133; }
+  .ayuda {
+    grid-area: ayuda;
+    background-color: #0ea133; }
+  .contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .contacto h2 {
+      display: none; } }
+
+@media screen and (max-width: 735px) {
+  .grid-footer {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 40% 30% 15% auto;
+    background-color: rgba(226, 225, 225, 0.685);
+    background-size: cover;
+    grid-template-areas: "log medio " "social lugar" "firma firma" "ayuda ayuda";
+    position: relative; }
+  .whats {
+    margin: 5px; }
+    .whats a img {
+      margin: 5px; }
+    .whats span {
+      display: none;
+      margin: 5px; }
+  .logofooter a img {
+    width: 180px;
+    height: 90px;
+    border-radius: 50%; }
+  .social {
+    display: flex;
+    justify-content: center; }
+    .social a img {
+      height: 25px;
+      width: 25px; }
+  .lugar iframe {
+    display: none; }
+  .lugar h3 {
+    position: absolute;
+    bottom: 70px; } }
+
+@media screen and (max-width: 514px) {
+  .whats h3 {
+    font-size: 10px; }
+  .contacto div a img {
+    height: 25px;
+    width: 25px; }
+  .contacto div span {
+    font-size: 10px; } }
+
+@media screen and (max-width: 481px) {
+  .grid-footer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 20% 20% 20% 20% 10% auto;
+    background-color: rgba(226, 225, 225, 0.685);
+    background-size: cover;
+    grid-template-areas: "log" "medio" "social" "lugar" "firma" "ayuda";
+    align-items: center; }
+  .firma {
+    height: 100%; }
+  .ayuda {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row; }
+  .log {
+    display: flex;
+    justify-content: center; }
+  .medio {
+    display: flex;
+    justify-content: center; }
+  .social {
+    display: flex;
+    justify-content: center; }
+  .lugar {
+    display: flex;
+    justify-content: center; }
+    .lugar h3 {
+      bottom: 40px; } }
+
+@media screen and (max-width: 422px) {
+  .contacto div h3 img {
+    display: none; }
+  .lugar h3 {
+    bottom: 50px; }
+  .whats h3 {
+    display: none; } }
+
+@media screen and (max-width: 378px) {
+  .tope h2 {
+    font-size: smaller; } }
+
+@media screen and (max-width: 326px) {
+  .mail a img {
+    display: none; } }
+
+/*--------Contacto Media querys-----------------------------------------*/
+@media screen and (max-width: 900px) {
+  .formu {
+    width: 600px; } }
+
+@media screen and (max-width: 850px) {
+  .formu {
+    width: 400px; } }
+
+@media screen and (max-width: 680px) {
+  .formu div h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px; }
+  .formu div label {
+    display: block;
+    margin-bottom: 4px;
+    color: #555; }
+  .formu div input[type="text"],
+  .formu div input[type="email"],
+  .formu div textarea,
+  .formu div select {
+    width: 100%;
+    padding: 6px;
+    font-size: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease; }
+  .formu div textarea {
+    resize: vertical; }
+  .formu div input[type="submit"] {
+    width: 100%;
+    padding: 6px;
+    font-size: 8px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; }
+    .formu div input[type="submit"]:hover {
+      background-color: #0056b3; } }
+
+@media screen and (max-width: 500px) {
+  .formu {
+    width: 300px; } }
+
+/*---------Nosotros-------*/
+@media screen and (max-width: 1077px) {
+  .contenedor section img {
+    margin-right: 20px;
+    height: 400px;
+    width: 297.6px; }
+  .contenedor section div div {
+    width: 480px; }
+  .contenedor section div img {
+    height: 120px;
+    width: 240px;
+    margin-right: 10px; }
+  .contenedor section div h3 {
+    font-size: 21.6px; }
+  .contenedor section div p {
+    font-size: 12.8px; } }
+
+@media screen and (max-width: 1009px) {
+  .contenedor section img {
+    margin-right: 10px;
+    height: 370px;
+    width: 267.6px; }
+  .contenedor section div div {
+    width: 450px; }
+  .contenedor section div img {
+    height: 110px;
+    width: 210px;
+    margin-right: 10px; }
+  .contenedor section div h3 {
+    font-size: 18px; }
+  .contenedor section div p {
+    font-size: 9px; } }
+
+@media screen and (max-width: 763px) {
+  .contenedor section {
+    margin: 2px; }
+    .contenedor section img {
+      margin-right: 10px;
+      height: 340px;
+      width: 237.6px; }
+    .contenedor section div div {
+      width: 410px; }
+    .contenedor section div img {
+      height: 100px;
+      width: 190px;
+      margin-right: 10px; }
+    .contenedor section div h3 {
+      font-size: 15px; }
+    .contenedor section div p {
+      font-size: 9px; } }
+
+@media screen and (max-width: 721px) {
+  .contenedor section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2px; }
+    .contenedor section img {
+      margin-right: 10px;
+      height: 340px;
+      width: 237.6px;
+      margin-top: 10px; }
+    .contenedor section div {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .contenedor section div p {
+        flex-wrap: wrap; }
+      .contenedor section div div {
+        width: 410px; }
+      .contenedor section div img {
+        height: 100px;
+        width: 190px;
+        margin-right: 10px; }
+      .contenedor section div h3 {
+        font-size: 15px; }
+      .contenedor section div p {
+        font-size: 9px; } }
+
+@media screen and (max-width: 453px) {
+  .contenedor section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2px; }
+    .contenedor section img {
+      margin-right: 10px;
+      height: 340px;
+      width: 237.6px;
+      margin-top: 10px; }
+    .contenedor section div {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .contenedor section div p {
+        flex-wrap: wrap; }
+      .contenedor section div div {
+        width: 310px; }
+      .contenedor section div img {
+        height: 100px;
+        width: 190px;
+        margin-right: 10px; }
+      .contenedor section div h3 {
+        font-size: 15px; }
+      .contenedor section div p {
+        font-size: 9px; } }
+
+@media screen and (max-width: 357px) {
+  .contenedor section {
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .contenedor section img {
+      margin-right: 10px;
+      height: 340px;
+      width: 237.6px;
+      margin-top: 10px; }
+    .contenedor section div {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .contenedor section div p {
+        flex-wrap: wrap; }
+      .contenedor section div div {
+        width: 260px; }
+      .contenedor section div img {
+        height: 100px;
+        width: 190px;
+        margin-right: 10px; }
+      .contenedor section div h3 {
+        font-size: 15px; }
+      .contenedor section div p {
+        font-size: 9px; } }

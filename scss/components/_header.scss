@@ -1,0 +1,51 @@
+.tope{
+    background-color: rgb(14, 161, 51);
+    height: 25px;
+    background-size: cover;
+    text-align: center;
+    h2{
+        font-size: 15px;
+        color: white;
+        padding: 2px;
+    
+    }       
+    
+}
+
+ .logo {
+    a{
+        img{
+            width: 200px;
+            height: 100px;
+             border-radius: 50%;
+
+        }
+    }
+ }
+
+ .barra {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    form{
+        margin-right: 200px !important;
+
+
+    }
+    ul{
+        margin:10px;
+        margin-right: 10px !important;
+
+    }
+
+ }
+
+ .nav-c{
+    li{
+        a{
+            color: rgb(14, 161, 51) !important;
+        font-weight: bold;
+        }
+    }
+ }

@@ -1,0 +1,14 @@
+@mixin flex($background,$background-size,$flex,$justify,$align,$direction,$height,$width){
+
+    background: $background;
+    background-size: $background-size;
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    height: $height;
+    width: $width;
+
+
+
+}
