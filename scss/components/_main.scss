@@ -1,23 +1,23 @@
 main{
     section{
         h1{
-            text-align: center;
-            font-size: 50px;
-            position: absolute;
-            bottom: 5px;
-            left: 50%;
-            transform: translateX(-50%);
-            color: rgb(13, 27, 145);
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra con desplazamiento horizontal de 2px, desplazamiento vertical de 2px, desenfoque de 4px y un color con opacidad */
             
+            font-size: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(15, 34, 202);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra con desplazamiento horizontal de 2px, desplazamiento vertical de 2px, desenfoque de 4px y un color con opacidad */
+            padding-top: 300px;
         
         }
+        
     }
 }
 
 .main1{
     position: relative;
-    background-image: url(../img/farma.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.178),rgba(255, 255, 255, 0.205)),url(../img/farma.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -70,20 +70,25 @@ main{
 
 .cuadrado1 {
     background-color: blueviolet;
+    @extend%rotacion;
 }
 .cuadrado{
-    background-color: rgb(14, 161, 51)
+    background-color: rgb(14, 161, 51);
+    @extend%rotacion;
 }
 .cuadrado2{
     background-color: orange;
+    @extend%rotacion;
 
 }
 .cuadrado3{
     background-color: rgb(240, 116, 136);
+    @extend%rotacion;
 
 }
 .cuadrado4{
     background-color: rgb(8, 8, 146);
+    @extend%rotacion;
 
 }
 
@@ -91,11 +96,12 @@ main{
 
 .linea{
     display: inline-block;
-    border-top: 1px solid black; 
+    border-top: 1px solid rgba(0, 0, 0, 0.089); 
     width:100%; 
     margin-top: 10px;
     h2{
         text-align: center;
+
 
     }
 
@@ -133,13 +139,9 @@ main{
             font-weight: bold;
         }
         button{
-            background-color: rgb(14, 161, 51);
-            color: white;
-            font-weight: bold;
-            height: 35px;
-            width: 200px;
-            border-color: rgb(14, 161, 51);
-            border-radius: 5%;
+            @extend %button-base;
+
+            
         }
     }
 
@@ -241,38 +243,52 @@ main{
             
                 
                     div{
-                    flex-direction: column;
-                    color: #fff;
+                        display: flex;
+                        flex-direction: column;
+                        div{
+                            color: #0056b3;
+                            display: flex; 
+                            align-items: center; 
+                            width: 600px; 
+                            background-color: #dddddd; 
+                            border-radius: 10px; 
+                            padding: 20px;
+                            
+                        }
+                        
                     
                             div {
                                 color: #0056b3;
-                                display: flex; /* Utilizar flexbox para el diseño */
-                                align-items: center; /* Centrar verticalmente los elementos */
-                                width: 600px; /* Ancho deseado del contenedor */
-                                background-color: #dddddd; /* Color de fondo gris */
-                                border-radius: 10px; /* Esquinas redondeadas */
-                                padding: 20px; /* Espacio interior */
+                                display: flex; 
+                                align-items: center; 
+                                width: 600px; 
+                                background-color: #dddddd; 
+                                border-radius: 10px; 
+                                padding: 20px;
+                                margin: 10px; 
                             }
                             
                             img {
                                 
                                 height: 150px;
                                 width: 300px;
-                                margin-right: 20px; /* Margen a la derecha */
-                                border-radius: 10px; /* Esquinas redondeadas para la imagen */
+                                margin-right: 20px; 
+                                border-radius: 10px; 
                                 
                             }
                             
                             div > div {
-                                flex: 1; /* El div interno ocupa todo el espacio restante */
+                                flex: 1; 
                             }
                             
                             h3 {
-                                margin: 0; /* Eliminar márgenes por defecto */
+                                margin: 0;
+                                text-align: justify;
                             }
                             
                             p {
-                                margin-top: 5px; /* Margen superior para separar el párrafo del título */
+                                margin-top: 5px; 
+                                text-align: justify;
                             }
                             
 
@@ -281,3 +297,10 @@ main{
 
             }
 }
+
+.nosotros-page{
+
+            div{
+                margin-top: 0px !important;
+            }
+        }

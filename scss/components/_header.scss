@@ -3,10 +3,27 @@
     height: 25px;
     background-size: cover;
     text-align: center;
+    overflow: hidden;
+    position: relative;
     h2{
         font-size: 15px;
         color: white;
         padding: 2px;
+        position: absolute;
+        white-space: nowrap;  // Evita que el texto se envuelva
+        left: 100%;  // Inicia fuera del contenedor a la derecha
+
+        animation: slide-in-out 20s linear infinite;  // Define la animación
+
+        @keyframes slide-in-out {
+            0% {
+                transform: translateX(100%);  // Comienza dentro del contenedor
+            }
+            100% {
+                transform: translateX(-500%);  // Termina fuera del contenedor a la izquierda
+            }
+        }
+
     
     }       
     
@@ -49,3 +66,18 @@
         }
     }
  }
+
+ .carrito {
+    position: absolute;
+    top: 0;
+    right: 20px; // Ajusta el valor según sea necesario
+    margin-top: 40px; // Ajusta el valor según sea necesario para alinear verticalmente con la barra de navegación
+    a{
+        text-decoration: none;
+
+        i{
+            font-size: 30px;
+            color: black;
+        }
+    }
+   }

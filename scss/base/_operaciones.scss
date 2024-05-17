@@ -12,3 +12,30 @@
 
 
 }
+
+
+%button-base{
+    background-color: rgb(14, 161, 51);
+    color: white;
+    font-weight: bold;
+    height: 35px;
+    width: 200px;
+    border-color: rgb(14, 161, 51);
+    border-radius: 5%;
+    font-size: small;
+
+    &:hover {
+        background-color: darken(rgb(14, 161,51), 10%);
+        border-color: darken(rgb(14, 161,51), 10%);
+    }
+
+    
+}
+
+%rotacion{
+    transition: 2s;
+
+    &:hover{
+        transform: rotateZ(360deg);
+    }
+}

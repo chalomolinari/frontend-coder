@@ -1,4 +1,28 @@
 
+/*---------HEADER----*/
+
+
+@media screen and (max-width: 991.98px) {
+    .carrito {
+        margin-top: 25px; 
+        
+        a{
+         
+            i{
+                font-size: 25px;
+                color: black;
+            }
+        }
+    
+    }
+}
+
+
+
+
+
+
+
 /*----MAIN---------------------------------------------*/
 @media screen and (max-width: 1106px){
     .grid-cont-secion{
@@ -41,7 +65,7 @@
 
     h1{
         font-size: 30px;
-
+        padding-top: 143px;
     }
 
 
@@ -170,6 +194,37 @@
 
 
 }
+
+
+
+@media screen and (max-width: 890px) {
+
+    .whatsapp-icon {
+        
+            a{
+                img{
+                    width: 70px;
+                    height: auto;
+                }
+            }
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+
+    .whatsapp-icon {
+        
+            a{
+                img{
+                    width: 50px;
+                    height: auto;
+                }
+            }
+    }
+
+}
+
 
 
 
@@ -802,7 +857,7 @@
             align-items: center;
             margin: 2px;
             img{
-                margin-right: 10px;
+                
                 height: 340px;
                 width: 237.6px;
                 margin-top: 10px;
@@ -864,9 +919,9 @@
             align-items: center;
             margin: 2px;
             img{
-                margin-right: 10px;
-                height: 340px;
-                width: 237.6px;
+                
+                height: 320px;
+                width: 217.6px;
                 margin-top: 10px;
 
             }
@@ -876,6 +931,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                margin-top: 3px;
                 h2{
                     
                 }
@@ -893,8 +949,8 @@
 
 
                 img{
-                    height: 100px;
-                    width: 190px;
+                    height: 80px;
+                    width: 170px;
                     margin-right: 10px;
                 }
 
@@ -927,10 +983,11 @@
             align-items: center;
 
             img{
-                margin-right: 10px;
-                height: 340px;
-                width: 237.6px;
+                
+                height: 290px;
+                width: 187.6px;
                 margin-top: 10px;
+                margin-bottom: 5px;
 
             }
      
@@ -956,8 +1013,8 @@
 
 
                 img{
-                    height: 100px;
-                    width: 190px;
+                    height: 80px;
+                    width: 170px;
                     margin-right: 10px;
                 }
 
