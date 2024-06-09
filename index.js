@@ -9,6 +9,18 @@
 
 let comprar;
 
+class Producto{
+    constructor(nombre, precio, marca){
+        this.nombre = nombre
+        this.precio = precio
+        this.marca = marca
+
+    }
+};
+
+let productos = [];
+
+
 do{
 
     
@@ -23,17 +35,29 @@ do{
 
                 
                     function pedirItem(i){
-                let item;
+                
+        
+                    let nombre = prompt("Ingrese el nombre del producto" + i + ":");
+                    let precio;        
                 do{   
-                    item = parseFloat(prompt("Cuanto cuesta el  producto " + i ));
+                    
+                    precio = parseFloat(prompt("Cuanto cuesta el  producto " + i ));
+                    
+                    
                      
-                    if(item < 0 || isNaN(item)){
+                    if(precio < 0 || isNaN(precio)){
                         console.log("Coloque un valor mayor a 0");
                         
                     }
-                }while(item < 0 || isNaN(item))
+                }while(precio < 0 || isNaN(precio));
 
-                    total += item;
+                    let marca = prompt("Ingrese la marca del producto" + i +":");
+
+                    let producto = new Producto(nombre,precio,marca);
+
+                    total += precio;
+
+                    productos.push(producto);
                 
                 }
 
@@ -50,6 +74,10 @@ do{
                     alert("Debe retirarlo en la sucursal mas cercana.");
                 }
                 
+                alert("SUS PRODUCTOS SON:");
+                productos.forEach((producto, index) => { 
+                    alert(`${index + 1}. ${producto.nombre} - ${producto.marca} - $${producto.precio}`);
+                    });
                 alert("El total de su pedido es:" + total);
 
                 
