@@ -24,11 +24,11 @@ let productos = [];
 do{
 
     
-
+    let total = 0;
         do{
              comprar = prompt("Desea comprar SI/NO");
             
-             let total = 0;
+             
 
             if(comprar.toLowerCase() == "si"){
                 let cantidad = parseInt(prompt("Cuantos items desea comprar?"));
