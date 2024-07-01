@@ -121,7 +121,13 @@ main{
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     margin:5px;
     justify-content: space-around;
-    
+    transition: 200ms;
+
+    &:hover {
+
+        translate: 0 -10px;
+        box-shadow: 0 10px 5px rgba(0, 0, 0, 0.228);
+    }
         img{
             width: 200px;
             height: 200px;
