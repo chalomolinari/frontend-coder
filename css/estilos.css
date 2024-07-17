@@ -14,6 +14,9 @@
     width: 90px;
     height: auto; }
 
+.escondido {
+  display: none; }
+
 .producto div button {
   background-color: #0ea133;
   color: white;
@@ -226,8 +229,8 @@ main section h1 {
       display: block;
       margin-bottom: 8px;
       color: #555; }
-    .formu > div input[type="text"],
-    .formu > div input[type="email"],
+    .formu > div input[type='text'],
+    .formu > div input[type='email'],
     .formu > div textarea,
     .formu > div select {
       width: 100%;
@@ -238,8 +241,8 @@ main section h1 {
       margin-bottom: 20px;
       box-sizing: border-box;
       transition: border-color 0.3s ease; }
-      .formu > div input[type="text"]:focus,
-      .formu > div input[type="email"]:focus,
+      .formu > div input[type='text']:focus,
+      .formu > div input[type='email']:focus,
       .formu > div textarea:focus,
       .formu > div select:focus {
         border-color: #007bff;
@@ -250,7 +253,7 @@ main section h1 {
     text-align: center;
     color: #333;
     margin-bottom: 20px; }
-  .formu input[type="submit"] {
+  .formu input[type='submit'] {
     width: 100%;
     padding: 12px;
     font-size: 16px;
@@ -260,7 +263,7 @@ main section h1 {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease; }
-    .formu input[type="submit"]:hover {
+    .formu input[type='submit']:hover {
       background-color: #0056b3; }
 
 /*!--------NOSOTROS-------------------------------------------------*/
@@ -316,6 +319,53 @@ main section h1 {
 
 .nosotros-page div {
   margin-top: 0px !important; }
+
+/*!--------CART-------------------------------------------------*/
+#productos-container {
+  margin: auto; }
+
+.tarjeta-cart {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center; }
+
+.tarjeta-cart img {
+  height: 90px;
+  aspect-ratio: 1.5; }
+
+.tarjeta-cart h3 {
+  width: 130px;
+  font-size: smaller; }
+
+.tarjeta-cart h4 {
+  font-size: smaller; }
+
+.botones {
+  display: flex;
+  flex-direction: row;
+  margin: 9px;
+  align-items: center; }
+  .botones button {
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    margin: 3px;
+    height: 23px;
+    width: 23px; }
+
+#totales {
+  text-align: center;
+  margin: 5px;
+  padding: 3px; }
+  #totales button {
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    padding: 2px; }
+
+#carrito-vacio {
+  text-align: center; }
 
 .whats {
   display: flex;
